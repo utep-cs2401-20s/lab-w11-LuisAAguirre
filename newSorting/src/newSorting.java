@@ -5,6 +5,7 @@ public class newSorting {
         // Base case
         if(A.length <= size){
             quickSort(A, 0, A.length - 1);
+
         } else {
             int[] left = new int[A.length / 2];                     // New array created from left side of array to middle index
             int[] right = new int[A.length - left.length];          // New array created from middle + 1 to end of array
@@ -25,7 +26,7 @@ public class newSorting {
         }
     }
 
-    public void quickSort(int[] A, int low, int high){
+    private void quickSort(int[] A, int low, int high){
         int pivot = A[low];         // Pivot will always be index 0
         int i = low;                // Counter for finding elements lower than pivot
         int j = high;               // Counter for finding elements higher than pivot
@@ -60,10 +61,10 @@ public class newSorting {
         }
     }
 
-    public void mergeSortedHalves(int[] A, int[] left, int[] right){
+    private void mergeSortedHalves(int[] A, int[] left, int[] right){
         int i = 0, j = 0, k = 0;
 
-        // Merge elements in order
+        // Merge elements in order from smallest to largest
         while(i < left.length && j < right.length){
             if(left[i] <= right[j]){
                 A[k++] = left[i++];

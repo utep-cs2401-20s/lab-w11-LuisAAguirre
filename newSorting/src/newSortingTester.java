@@ -20,6 +20,10 @@ public class newSortingTester {
 
         assertArrayEquals(sorted, unsorted);
     }
+    /*
+    Result:
+    Test passed. Array was sorted correctly.
+     */
 
     @Test
     /*
@@ -36,6 +40,10 @@ public class newSortingTester {
 
         assertArrayEquals(sorted, unsorted);
     }
+    /*
+    Result:
+    Test passed. Array was sorted correctly. Negative numbers were sorted at the beginning of array before positive numbers.
+     */
 
     @Test
     /*
@@ -53,6 +61,10 @@ public class newSortingTester {
 
         assertArrayEquals(sorted, unsorted);
     }
+    /*
+    Result:
+    Test passed. Array was sorted correctly. Array with many elements was sorted without issues.
+     */
 
     @Test
     /*
@@ -69,6 +81,10 @@ public class newSortingTester {
 
         assertArrayEquals(sorted, unsorted);
     }
+    /*
+    Result:
+    Test passed. Array was sorted correctly.
+     */
 
     @Test
     /*
@@ -86,4 +102,8 @@ public class newSortingTester {
 
         assertArrayEquals(sorted, unsorted);
     }
+    /*
+    Result:
+    Test passed. Array was sorted correctly. Array remained sorted and duplicate elements remained on the same spot.    
+     */
 }
